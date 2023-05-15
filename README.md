@@ -7,7 +7,7 @@
  
  Centus - Variables, Functions, Loops, Arrays & Using the Debugger / 1st example of Model View Controller / 1st use of Prism to display Code
  
- Project - Goal
+ Rewind - Reverse a String, Array manipulation / 2nd example of Model View Controller / 2nd use of Prism to display Code
  
  Project - Goal
  
