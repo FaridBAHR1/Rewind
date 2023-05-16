@@ -24,5 +24,8 @@ function reverseString(userString){
 
 //Display Revered String - View/Display
 function displayString(revString){
-    
+    //write message
+    document.getElementById("msg").innerHTML = `Your String reversed is: ${revString}`;
+    //show alert
+    document.getElementById("alert").classList.remove("invisible");
 }
