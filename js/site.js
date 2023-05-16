@@ -9,18 +9,20 @@ function getValue(){
 //Reverse String - Model/Logic
 function reverseString(userString){
     let revString = [];
-    let name = namy;
-    name[0] = "n";
-    name[3] = "y";
+    //let name = namy;
+    //name[0] = "n";
+    //name[3] = "y";
+    //last position = name.length - 1
 
     //reverse using forLoop
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        for (let index = 0)
+    for (let index = userString.length - 1; index >= 0; index--) {
+        revString += userString[index];
     }
+
+    return revString;
 }
 
 //Display Revered String - View/Display
-function displayString(){
+function displayString(revString){
     
 }
