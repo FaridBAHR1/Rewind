@@ -59,9 +59,32 @@
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //Call function
-                        function Application_Main(){
-                            alert("Main Function");
+                        //Get String's Value - Controller/
+                        function getValue(){
+                            document.getElementById("alert").classList.add("invisible");
+                            let userString = document.getElementById("userString").value;
+                            let revString = reverseString(userString);
+                            displayString(revString);
+                        }
+
+                        //Reverse String - Model/Logic
+                        function reverseString(userString){
+                            let revString = [];
+
+                            //reverse using forLoop
+                            for (let index = userString.length - 1; index >= 0; index--) {
+                                revString += userString[index];
+                            }
+
+                            return revString;
+                        }
+
+                        //Display Revered String - View/Display
+                        function displayString(revString){
+                            //write message
+                            document.getElementById("msg").innerHTML = `Your String reversed is: ${revString}`;
+                            //show alert
+                            document.getElementById("alert").classList.remove("invisible");
                         }
                     </code></pre>
                 </div>
